@@ -13,7 +13,6 @@ RSpec.describe "Food Search Index" do
       
       click_button "Search"
       
-    
       expect(current_path).to eq("/foods")
 
       expect(page).to have_content("SWEET POTATO")
