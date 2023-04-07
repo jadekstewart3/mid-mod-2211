@@ -1,1 +1,7 @@
-<%=  %>
+  <p>Total Results: <%= @foods.size %></p>
+<%@foods.take(10).each do |food| %>
+  <p>Description: <%= food.description %></p>
+  <p>Upc:<%= food.upc %> </p>
+  <p>Brand:<%= food.brand %> </p>
+  <p>Ingredients:<%= food.ingredients %> </p>
+  <% end %>
