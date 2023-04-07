@@ -8,7 +8,6 @@ class SearchService
 
   def food_search(food)
     response = connection.get("foods/search?query=#{food}")
-    require 'pry'; binding.pry
     JSON.parse(response.body, symbolize_names: true)
   end
 end
