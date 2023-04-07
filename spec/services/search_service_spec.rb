@@ -6,8 +6,8 @@ RSpec.describe SearchService do
     it "returns a json object" do
 
       expect(foods).to be_a(Hash)
-
       expect(foods).to have_key(:foods)
+      expect(foods[:foods]).to be_an(Array)
     end
   end
 end
